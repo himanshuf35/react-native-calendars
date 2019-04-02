@@ -23,7 +23,8 @@ class CalendarHeader extends Component {
     weekNumbers: PropTypes.bool,
     onPressArrowLeft: PropTypes.func,
     onPressArrowRight: PropTypes.func,
-    disableLeftArrow: PropTypes.func
+    disableLeftArrow: PropTypes.bool,
+    updateCalendar: PropTypes.bool
   };
 
   static defaultProps = {
