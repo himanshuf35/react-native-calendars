@@ -77,7 +77,9 @@ class Calendar extends Component {
     // Handler which gets executed when press arrow icon left. It receive a callback can go next month
     onPressArrowRight: PropTypes.func,
     // To Disable the Left Arrow
-    disableLeftArrow: PropTypes.bool
+    disableLeftArrow: PropTypes.bool,
+    // To update calendar
+    updateCalendar: PropTypes.bool
   };
 
   constructor(props) {
@@ -270,6 +272,7 @@ class Calendar extends Component {
           onPressArrowLeft={this.props.onPressArrowLeft}
           onPressArrowRight={this.props.onPressArrowRight}
           disableLeftArrow={this.props.disableLeftArrow}
+          updateCalendar={this.props.updateCalendar}
         />
         <View style={this.style.monthView}>{weeks}</View>
       </View>);
